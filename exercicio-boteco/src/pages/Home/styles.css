@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  max-height: 100vh;
+  max-width: 100vw;
+  height: 100%;
+  width: 100%;
+}
+*,
+button,
+input {
+  border: 0;
+  background: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(../../assets/img/bg-body.png);
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 180px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+nav ul li {
+  background-color: #444444;
+  width: 180px;
+  padding: 16px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+a {
+  color: #ecf2f8;
+  text-decoration: none;
+}
+
+section {
+  margin-top: 30px;
+}
+section img.banner {
+  width: 100%;
+}
+
+section.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  justify-content: space-between;
+  gap: 30px 10px;
+}
+
+section.container-grid > div,
+section.container-grid img.img-produto {
+  width: 380px;
+}
+
+section.container-grid .container-img {
+  position: relative;
+}
+
+section.container-grid .container-img .brand {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+section.container-grid .container-img .banner-text {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  color: #ecf2f8;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+section.container-grid div button {
+  outline: none;
+  background-color: #444444;
+  color: #ecf2f8;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+  margin-top: 5px;
+}
+
+footer {
+  background-color: #b92519;
+  padding: 50px;
+  margin-top: 30px;
+  border-radius: 20px 20px 0 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li {
+  list-style: none;
+  margin-left: 5px;
+}
