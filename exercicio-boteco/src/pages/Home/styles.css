@@ -3,14 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
-body,
-#root {
-  max-height: 100vh;
-  max-width: 100vw;
-  height: 100%;
-  width: 100%;
-}
+
 *,
 button,
 input {
@@ -25,6 +18,11 @@ body {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
 header {
   text-align: center;
   margin-top: 15px;
@@ -37,6 +35,7 @@ header {
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
@@ -64,14 +63,14 @@ section img.banner {
 
 section.container-grid {
   display: grid;
-  grid-template-columns: repeat(3, 380px);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   gap: 30px 10px;
 }
 
 section.container-grid > div,
 section.container-grid img.img-produto {
-  width: 380px;
+  width: 100%;
 }
 
 section.container-grid .container-img {
@@ -115,6 +114,7 @@ footer {
 
 footer ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
